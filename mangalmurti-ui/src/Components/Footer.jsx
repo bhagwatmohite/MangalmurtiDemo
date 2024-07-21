@@ -55,6 +55,17 @@ const Footer = () => {
         </div>
       </div>
       {/* <!-- Footer End --> */}
+
+      {/* <!-- Copyright Start --> */}
+      <div className="container-fluid copyright bg-dark py-4">
+        <div className="container text-center">
+          <p className="mb-2">Copyright &copy; <a className="fw-semi-bold" href="#">Shree ManagalMurti</a>, All Right Reserved.
+          </p>
+
+          <p className="mb-0">Designed By : <a href="http://www.ezioinfotech.com/">EzioInfoTech pvt ltd</a> </p>
+        </div>
+      </div>
+      {/* <!-- Copyright End --> */}
     </>
   )
 }

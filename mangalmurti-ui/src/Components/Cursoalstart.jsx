@@ -9,7 +9,7 @@ const Cursoalstart = () => {
         <div id="header-carousel" className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img className="w-100" src="img/slider1.jpg" alt="Image" />
+              <img className="w-100" style={{ height: '900px' }} src="img/slider11.jpg" alt="Image" />
               <div className="carousel-caption">
                 <div className="container">
                   <div className="row justify-content-center">
@@ -25,7 +25,7 @@ const Cursoalstart = () => {
               </div>
             </div>
             <div className="carousel-item">
-              <img className="w-100" src="img/slider12.jpg" alt="Image" />
+              <img className="w-100" style={{ height: '900px' }} src="img/slider123.jpg" alt="Image" />
               <div className="carousel-caption">
                 <div className="container">
                   <div className="row justify-content-center">

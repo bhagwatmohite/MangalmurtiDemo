@@ -1,9 +1,18 @@
 /* eslint-disable react/no-unknown-property */
 
 
-const VideoModal = () => {
+const BlogPage = () => {
   return (
     <>
+      {/* <!-- Page Header Start --> */}
+      <div className="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div className="container py-5">
+          <h1 className="display-3 text-white animated slideInRight">Our Blog</h1>
+
+
+        </div>
+      </div>
+
       {/* <!-- Video Modal Start --> */}
       <div className="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -24,9 +33,8 @@ const VideoModal = () => {
         </div>
       </div>
       {/* <!-- Video Modal End --> */}
-
     </>
   )
 }
 
-export default VideoModal
+export default BlogPage

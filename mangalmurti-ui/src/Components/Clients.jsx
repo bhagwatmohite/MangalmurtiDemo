@@ -1,4 +1,54 @@
 
+const testimonials = [
+  {
+    img: "img/testimonial-1.jpg",
+    text: "Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.",
+    name: "Hitech Corporation Ltd.",
+    profession: "Profession",
+  },
+  {
+    img: "img/testimonial-2.jpg",
+    text: "Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.",
+    name: "Jolly Containers.",
+    profession: "Profession",
+  },
+  {
+    img: "img/testimonial-1.jpg",
+    text: "Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.",
+    name: "Parekh Plast Ltd.",
+    profession: "Profession",
+  },
+  {
+    img: "img/testimonial-1.jpg",
+    text: "Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.",
+    name: "Bansal Plastopack.",
+    profession: "Profession",
+  },
+  {
+    img: "img/testimonial-1.jpg",
+    text: "Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.",
+    name: "Sun Packaging.",
+    profession: "Profession",
+  },
+  {
+    img: "img/testimonial-1.jpg",
+    text: "Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.",
+    name: "Mold – Tek Packaging Ltd.",
+    profession: "Profession",
+  },
+  {
+    img: "img/testimonial-1.jpg",
+    text: "Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.",
+    name: "Konverter Packaging Solutions Ltd.",
+    profession: "Profession",
+  },
+  {
+    img: "img/testimonial-1.jpg",
+    text: "Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.",
+    name: "Geetanjali Plast Engineering Solutions Ltd.",
+    profession: "Profession",
+  },
+];
 
 const Clients = () => {
   return (
@@ -12,59 +62,27 @@ const Clients = () => {
           </div>
 
           <div className="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-            <div className="testimonial-item text-center">
-              <div className="testimonial-img position-relative">
-                <img className="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-1.jpg" />
-                <div className="btn-square bg-primary rounded-circle">
-                  <i className="fa fa-quote-left text-white"></i>
+            {testimonials.map((testimonial, index) => (
+              <div className="testimonial-item text-center" key={index}>
+                <div className="testimonial-img position-relative">
+                  <img className="img-fluid rounded-circle mx-auto mb-5" src={testimonial.img} alt={`Testimonial from ${testimonial.name}`} />
+                  <div className="btn-square bg-primary rounded-circle">
+                    <i className="fa fa-quote-left text-white"></i>
+                  </div>
+                </div>
+                <div className="testimonial-text text-center rounded p-4">
+                  <p>{testimonial.text}</p>
+                  <h5 className="mb-1">{testimonial.name}</h5>
+                  <span className="fst-italic">{testimonial.profession}</span>
                 </div>
               </div>
-              <div className="testimonial-text text-center rounded p-4">
-
-                <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna
-                  ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea
-                  clita.</p>
-                <h5 className="mb-1">Client Name</h5>
-                <span className="fst-italic">Profession</span>
-              </div>
-            </div>
-            <div className="testimonial-item text-center">
-              <div className="testimonial-img position-relative">
-                <img className="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-2.jpg" />
-                <div className="btn-square bg-primary rounded-circle">
-                  <i className="fa fa-quote-left text-white"></i>
-                </div>
-              </div>
-              <div className="testimonial-text text-center rounded p-4">
-                <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna
-                  ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea
-                  clita.</p>
-                <h5 className="mb-1">Client Name</h5>
-                <span className="fst-italic">Profession</span>
-              </div>
-            </div>
-            <div className="testimonial-item text-center">
-              <div className="testimonial-img position-relative">
-                <img className="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-3.jpg" />
-                <div className="btn-square bg-primary rounded-circle">
-                  <i className="fa fa-quote-left text-white"></i>
-                </div>
-              </div>
-              <div className="testimonial-text text-center rounded p-4">
-                <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna
-                  ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea
-                  clita.</p>
-                <h5 className="mb-1">Client Name</h5>
-                <span className="fst-italic">Profession</span>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
       {/* <!-- Testimonial End --> */}
-
     </>
-  )
+  );
 }
 
-export default Clients
+export default Clients;

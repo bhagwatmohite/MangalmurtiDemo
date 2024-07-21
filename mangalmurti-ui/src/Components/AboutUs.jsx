@@ -19,7 +19,7 @@ const AboutUs = () => {
             </div>
             <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
               <p className="fw-medium text-uppercase text-primary mb-2">About Us</p>
-              <h1 className="display-5 mb-4">We Are Leader In Manufacturing  Word...</h1>
+              <h1 className="display-5 mb-4">We Are Leader In Manufacturing  World...</h1>
               <p className="mb-4">Mangalmurti Industries was incorporated in 2017 with a vision to provide innovative & quality products to industry in powder coated MS handles segments, and Now it is one of the leading manufacturing of powder coating MS handles with good product quality.
                 Mangalmurti industry capacity  having 40 Lack per month, Now we are producing 18 lacks to 20 lacks unit per month.
                 We are here to provide services which focus on customer concentricity rather than profit making motive in such competitive market.
@@ -32,14 +32,15 @@ const AboutUs = () => {
                   <h5 className="text-white">Experience</h5>
                 </div>
                 <div className="ms-4">
-                  <p><i className="fa fa-check text-primary me-2"></i>Power & Energy</p>
-                  <p><i className="fa fa-check text-primary me-2"></i>Civil Engineering</p>
-                  <p><i className="fa fa-check text-primary me-2"></i>Chemical Engineering</p>
-                  <p><i className="fa fa-check text-primary me-2"></i>Mechanical Engineering</p>
-                  <p className="mb-0"><i className="fa fa-check text-primary me-2"></i>Oil & Gas Engineering</p>
+                  <p><i className="fa fa-check text-primary me-2"></i>Oven</p>
+                  <p><i className="fa fa-check text-primary me-2"></i> Poweder Coating Booth </p>
+                  <p><i className="fa fa-check text-primary me-2"></i> Automatic Handle Making Machine </p>
+                  <p><i className="fa fa-check text-primary me-2"></i>Hand molding machine  </p>
+                  <p className="mb-0"><i className="fa fa-check text-primary me-2"></i>Wire cutting machine     </p>
                 </div>
               </div>
-              <div className="row pt-2">
+
+              <div className="row pt-2" style={{ gap: '50px' }} >
                 <div className="col-sm-6" >
                   <div className="d-flex align-items-center">
                     <div className="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
@@ -64,6 +65,7 @@ const AboutUs = () => {
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
